@@ -18,7 +18,7 @@ class CreateLeadsTable extends Migration
             $table->string('name',100);
             $table->string('email', 100)->unique();
             $table->boolean('newsletter');
-            $table->text('message')
+            $table->text('message');
             $table->timestamps();
         });
     }
